@@ -30,21 +30,13 @@
     }
 
     &.round {
+        $corners: 3, 7, 12, 20;
 
-        &-3 {
-            border-radius: 3px;
-        }
+        @each $corner in $corners {
 
-        &-7 {
-            border-radius: 7px;
-        }
-
-        &-12 {
-            border-radius: 12px;
-        }
-
-        &-20 {
-            border-radius: 20px;
+            &-#{$corner} {
+                border-radius: $corner+px;
+            }
         }
     }
 }
