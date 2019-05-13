@@ -1,3 +1,5 @@
+@import 'reset';
+
 $color-1: #21C2F8;
 $color-2: #FFFFFF;
 $color-3: #222533;
@@ -12,8 +14,6 @@ $color-11: #8FC567;
 
 * {
     box-sizing: border-box;
-    margin: 0;
-    padding: 0;
 }
 
 body {
