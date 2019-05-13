@@ -55,6 +55,18 @@
 }
 
 .bg-color {
+    @mixin color($ind) {
+        color: color-#{$ind};
+    }
+
+    @for $color from 1 through $palette-length {
+
+        $local: #{$color};
+
+        &-$color {
+            background-color: @include color()
+        }
+    }
 
     &-1 {
         background-color: $color-1;
