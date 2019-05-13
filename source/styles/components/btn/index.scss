@@ -1,0 +1,111 @@
+.btn {
+    padding: 11px 36.1px 11px 36.2px;
+    border: none;
+    background: $color-1;
+    color: $color-2;
+    font-family: 'Lato', sans-serif;
+    font-size: 14px;
+    font-weight: 900;
+    letter-spacing: .2px;
+    text-decoration: none;
+    text-transform: uppercase;
+
+    &:hover {
+        background-color: $color-3;
+        cursor: pointer;
+    }
+
+    &.medium {
+        padding: 14px 47px;
+        font-size: 18px;
+    }
+
+    &.large {
+        padding: 23px 93px;
+        font-size: 26px;
+    }
+
+    &.x-large {
+        padding: 27px 100px 27px 102px;
+        font-size: 36px;
+    }
+
+    &.round {
+
+        &-3 {
+            border-radius: 3px;
+        }
+
+        &-7 {
+            border-radius: 7px;
+        }
+
+        &-12 {
+            border-radius: 12px;
+        }
+
+        &-20 {
+            border-radius: 20px;
+        }
+    }
+}
+
+.row {
+    display: flex;
+    align-items: flex-end;
+
+    .btn {
+        margin-right: 30px;
+
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+}
+
+.bg-color {
+
+    &-1 {
+        background-color: $color-1;
+    }
+
+    &-2 {
+        background-color: $color-2;
+    }
+
+    &-3 {
+        background-color: $color-3;
+    }
+
+    &-4 {
+        background-color: $color-4;
+    }
+
+    &-5 {
+        background-color: $color-5;
+    }
+
+    &-6 {
+        background-color: $color-6;
+    }
+
+    &-7 {
+        background-color: $color-7;
+    }
+
+    &-8 {
+        background-color: $color-8;
+    }
+
+    &-9 {
+        background-color: $color-9;
+    }
+
+    &-10 {
+        background-color: $color-10;
+    }
+
+    &-11 {
+        background-color: $color-11;
+    }
+}
