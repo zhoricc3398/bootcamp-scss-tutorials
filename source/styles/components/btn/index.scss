@@ -2,8 +2,8 @@
 
 .btn {
     border: none;
-    background: $color-1;
-    color: $color-2;
+    background: color(1);
+    color: color(2);
     font-family: 'Lato', sans-serif;
     font-weight: 900;
     letter-spacing: .2px;
@@ -13,7 +13,7 @@
     @include size(14px, 11px, 36.1px, 11px, 36.2px);
 
     &:hover {
-        background-color: $color-3;
+        background-color: color(3);
         cursor: pointer;
     }
 
@@ -35,7 +35,7 @@
         @each $corner in $corners {
 
             &-#{$corner} {
-                border-radius: $corner+px;
+                border-radius: $corner + px;
             }
         }
     }
@@ -55,60 +55,10 @@
 }
 
 .bg-color {
-    @mixin color($ind) {
-        color: color-#{$ind};
-    }
+    @each $ind, $color in $palette {
 
-    @for $color from 1 through $palette-length {
-
-        $local: #{$color};
-
-        &-$color {
-            background-color: @include color()
+        &-#{$ind} {
+            background-color: $color;
         }
-    }
-
-    &-1 {
-        background-color: $color-1;
-    }
-
-    &-2 {
-        background-color: $color-2;
-    }
-
-    &-3 {
-        background-color: $color-3;
-    }
-
-    &-4 {
-        background-color: $color-4;
-    }
-
-    &-5 {
-        background-color: $color-5;
-    }
-
-    &-6 {
-        background-color: $color-6;
-    }
-
-    &-7 {
-        background-color: $color-7;
-    }
-
-    &-8 {
-        background-color: $color-8;
-    }
-
-    &-9 {
-        background-color: $color-9;
-    }
-
-    &-10 {
-        background-color: $color-10;
-    }
-
-    &-11 {
-        background-color: $color-11;
     }
 }
